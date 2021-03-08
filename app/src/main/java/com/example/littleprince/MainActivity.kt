@@ -107,6 +107,7 @@ class MainActivity : AppCompatActivity() {
                     notifyUser("Время суток изменилось","Наступила ночь. Вы можете пойти спать")
                 }
                 imgView -> {
+                    canClick = true
                     when(currentTime)
                     {
                         0 -> Toast.makeText(applicationContext, "Вы сделали глоток из чашки с кофе", Toast.LENGTH_LONG).show()
